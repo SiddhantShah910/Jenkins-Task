@@ -21,10 +21,10 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}") {
-            bat "
+            bat """
             C:\\Jmeter\\apache-jmeter-5.4.3\\bin\\jmeter.bat -n -t Test05.jmx -l Shift-Left.jtl
             git push main 
-            "
+            """
         }
     }
 
