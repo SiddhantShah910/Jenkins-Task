@@ -11,7 +11,7 @@ node {
                                 credentialsId: "octoperf-user"
                         ]
                 ],
-                branches: [[name: "master"]]
+                branches: [[name: "main"]]
         ], poll: false
     }
 
@@ -22,7 +22,7 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
-            bat "c:/apache-jmeter/apache-jmeter/bin/jmeter.bat -n -t Shift-Left.jmx -l Shift-Left.jtl -Joptestvalue=${octoperf_test_value}"
+            bat "C:\Jmeter\apache-jmeter-5.4.3\bin\jmeter.bat -n -t Test05.jmx -l Shift-Left.jtl"
         }
     }
 
