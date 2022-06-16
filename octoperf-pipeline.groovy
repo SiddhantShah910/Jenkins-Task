@@ -7,8 +7,8 @@ node {
                 $class: 'GitSCM',
                 userRemoteConfigs: [
                         [
-                                url: "https://bitbucket.org/xxxxxx/performance-test-repo.git",
-                                credentialsId: "octoperf-user"
+                                url: "https://github.com/SiddhantShah910/Jenkins-Task.git",
+                                credentialsId: "SiddhantShah910"
                         ]
                 ],
                 branches: [[name: "main"]]
