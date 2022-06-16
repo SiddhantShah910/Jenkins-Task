@@ -23,7 +23,7 @@ node {
         dir("${WORKSPACE}") {
             bat "C:\\Jmeter\\apache-jmeter-5.4.3\\bin\\jmeter.bat -n -t Test05.jmx -l Shift-Left.jtl"
             bat "git add ."
-            bat "git commit -m 'initial commit'"
+            bat "git commit -m "initial commit""
             bat "git push origin main"
         }
     }
