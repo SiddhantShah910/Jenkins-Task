@@ -22,10 +22,10 @@ node {
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}") {
             bat "C:\\Jmeter\\apache-jmeter-5.4.3\\bin\\jmeter.bat -n -t Test05.jmx -l Shift-Left.jtl"
-            bat "git add ."
-            bat """git commit -m "initial commit" """
-            bat "git pull --rebase origin main"
-            bat "git push -u origin main "
+            bat "git push Shift-Left.jtl"
+//             bat """git commit -m "initial commit" """
+//             bat "git pull --rebase origin main"
+//             bat "git push -u origin main "
         }
     }
 
